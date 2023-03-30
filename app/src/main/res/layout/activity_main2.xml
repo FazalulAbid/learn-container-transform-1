@@ -2,18 +2,19 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_activity_container"
+    android:id="@+id/shared_element_container_2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/purple_500"
+    tools:context=".MainActivity2">
 
-    <Button
-        android:id="@+id/button_go"
+    <TextView
+        android:id="@+id/shared_element_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="goToNextActivity"
-        android:transitionName="go"
-        android:text="Go"
+        android:text="Activity 2"
+        android:textColor="@color/white"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
